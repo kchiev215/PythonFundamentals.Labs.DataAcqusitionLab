@@ -4,7 +4,7 @@ import json
 offset_counter = 1
 file = 0
 
-while file < 39:
+while file <= 39:
     url = 'https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?location&limit=1000&' + 'offset=' + str(offset_counter)
     req = urllib.request.Request(url, headers={'TOKEN': 'BwEQHKXofzVilsfljZDVTimCdklIiGLh'})
     file_name = 'locations_' + str(file) + '.json'
